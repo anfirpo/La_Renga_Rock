@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El rock & roll no morirá jamás</title>
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../script/app.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg bg-dark sticky-top text-uppercase" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ultimo_disco.html">Último Disco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proximos_shows.html">Próximos Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discos.html">Discos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biografia.html">Biografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="navbar-brand" href="../index.html"><img src="../img/la_renga.png" alt="Logo de La Renga"
+                    class="logo"></a>
+        </div>
+    </header>
+
+    <main>
+        <h1> CONTACTO </h1>
+        <h3> Suscribite para más noticias al instante </h3>
+
+        <form class="container-fluid mb-3 col-md-6 col-sm-12 my-4">
+            <div class="mb-3 fw-bold">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ej. Juan" required class="form-control">
+            </div>
+            <div class="mb-3 fw-bold">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ej. Lopez" required class="form-control">
+            </div>
+            <div class="mb-3 fw-bold">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="Ej. juan@lopez.com" required class="form-control">
+            </div>
+            <div class="mb-3 fw-bold">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Ej. 1123456789" required class="form-control">
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control my-4" placeholder="Leave a comment here" id="floatingTextarea"
+                    style="height: 150px"></textarea>
+                <label for="floatingTextarea">¡Dejanos tu comentario!</label>
+            </div>
+            <div class="d-flex justify-content-evenly">
+                <button type="reset" value="Borrar" class="btn btn-danger mt-2 mb-5">Borrar</button>
+                <button type="submit" value="Enviar" class="btn btn-primary mt-2 mb-5">Enviar</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="container-fluid d-flex justify-content-md-between justify-content-center bg-dark fixed-bottom py-2"
+        data-bs-theme="dark">
+        <span class="text-light d-none d-md-block"> ¡El Rock & Roll no morirá jamas! </span>
+        <div>
+            <a aria-current="page" href="https://www.facebook.com/larenga/?locale=es_LA" target="_blank"><img
+                    src="../img/facebook.png" alt="Facebook" class="redSocial mx-2"></a>
+
+            <a href="https://twitter.com/larenga?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"><img src="../img/twitter.png" alt="Twitter" class="redSocial mx-2"></a>
+
+            <a href="https://open.spotify.com/intl-es/artist/30fEdZPXgWfC4sNttcyB3C" target="_blank"><img
+                    src="../img/spotify.png" alt="Spotify" class="redSocial mx-2"></a>
+
+            <a href="https://www.instagram.com/larenga/?utm_source=ig_embed&ig_rid=745ecbf7-c56f-4bf2-8572-fcd8352415a3"
+                target="_blank"><img src="../img/instagram.png" alt="Instagram" class="redSocial mx-2"></a>
+
+            <a href="https://www.youtube.com/@larenga" target="_blank"><img src="../img/youtube.png" alt="Youtube"
+                    class="redSocial mx-2"></a>
+        </div>
+    </footer>
+
+    <!-- BS CSS SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
