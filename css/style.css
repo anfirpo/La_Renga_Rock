@@ -69,6 +69,14 @@ p {
     line-height: 30px;
 }
 
+.boldText {
+    font-weight: bold;
+}
+
+.italicText {
+    font-style: italic;
+}
+
 /* FOOTER */
 
 .redSocial {
@@ -98,6 +106,7 @@ p {
 
 .showsLugar {
     font-size: medium;
+    font-style: italic;
 }
 
 @media (max-width: 600px) {
