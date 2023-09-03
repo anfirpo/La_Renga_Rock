@@ -1,0 +1,802 @@
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* RESET CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* RESET --> Sirve para resetear los atributos mencionados dentro de las llaves; esto se hace para resetear atributos que el navegador tenga por defecto, y puedan colisionar con nuestra página*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* BODY CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: bisque;
+}
+
+h2 {
+    /*     border: 1px solid red; */
+    background: linear-gradient(90deg, bisque, rgb(14, 15, 50), rgb(14, 15, 50), bisque);
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px 0px;
+    z-index: 1;
+}
+
+h3 {
+    /*     border: 1px solid red; */
+    background: linear-gradient(90deg, bisque, rgb(145, 148, 252), rgb(145, 148, 252), bisque);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    z-index: 1;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* HEADER & NAV CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.menu {
+    background-color: rgb(14, 15, 50);
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(162, 94, 80, 1);
+    top: 0;
+    position: fixed;
+    z-index: 9;
+}
+
+.logo {
+    height: 73px;
+    width: 73px;
+    margin: 0px 30px;
+}
+
+.menuItems {
+    display: flex;
+    list-style: none;
+    margin-left: 25px;
+}
+
+.menuItems li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menuItems li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.menuItems li:hover,
+li.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: .6s;
+}
+
+.btnMenu {
+    margin-left: 10px;
+    font-size: 25px;
+    color: aliceblue;
+    cursor: pointer;
+    display: none;
+}
+
+/* CLASE PARA MOSTRAR U OCULTAR EL MENÚ */
+
+ul.show {
+    top: 65px
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* FOOTER CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.pie {
+    background-color: rgb(14, 15, 50);
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px solid rgb(162, 94, 80, 1);
+    bottom: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+.leyenda {
+    flex-grow: 50;
+    margin-left: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.redSocial {
+    height: 30px;
+    width: 30px;
+    margin: 0 30px 0 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* INDEX.HTML CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.indexFlexContainer {
+    display: flex;
+    width: 100vw;
+    height: 87vh;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#mainVideo {
+    flex-grow: 999;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ULTIMO_DISCO.HTML CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.ultimoDiscoFlexContainer::before {
+    content: "";
+    background-image: url('../img/fondo_contacto.jpg');
+    background-size: cover;
+    position: fixed;
+    background-position: center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.ultimoDiscoFlexContainer {
+    /*     border: 1px solid red; */
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimoDiscoFlexContainer h2 {
+    /*     border: 1px solid red; */
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.ultimoDiscoFlexContainer h3 {
+    /*     border: 1px solid red; */
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.ultimoDiscoImagen {
+    /*     border: 1px solid red; */
+    padding: 1%;
+    height: 50%;
+    flex-basis: 0;
+    flex-grow: 2;
+    flex-shrink: 1;
+    min-width: 60%;
+}
+
+.ultimoDiscoTexto {
+    /*     border: 1px solid red; */
+    flex-basis: 20rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    gap: 5px;
+}
+
+.ultimoDiscoTexto p {
+    text-align: justify;
+    line-height: 25px;
+    padding: 5px 20px;
+}
+
+.ultimoDiscoEscuchar {
+    border: 2px solid rgb(14, 15, 50);
+    border-radius: 5px;
+    background-color: rgb(30, 215, 96);
+    text-align: center;
+    line-height: 25px;
+    width: 300px;
+    margin: 50px 0px;
+    padding: 10px 10px;
+}
+
+.ultimoDiscoEscuchar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(14, 15, 50);
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* PROXIMOS_SHOWS.HTML CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.proximosShowsFlexContainer::before {
+    content: "";
+    background-image: url('../img/fondo_contacto.jpg');
+    background-size: cover;
+    position: fixed;
+    background-position: center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.proximosShowsFlexContainer {
+    display: flex;
+    flex-flow: wrap;
+    width: 100vw;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+.showsDiv {
+    border-top: 2px solid rgb(14, 15, 50);
+    background: linear-gradient(180deg, rgba(145, 148, 252, 0.566) 80%, bisque);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+    z-index: 1;
+}
+
+.showsDiv div {
+    margin: 5px 10px;
+    padding: 14px;
+    text-align: center;
+    /*     border: 1px solid red; */
+    width: 350px;
+    min-width: 360px;
+    height: 50px;
+    flex-grow: 1;
+}
+
+.showsDiv div p {
+    text-align: left;
+}
+
+.biografiaFecha {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.biografiaProvincia {
+    font-size: large;
+    font-weight: bold;
+}
+
+.biografiaLugar {
+    font-size: small;
+}
+
+.showsDiv div button {
+    border: 2px solid rgb(14, 15, 50);
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    margin: -15px;
+    background-color: rgb(14, 15, 50);
+    color: aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* DISCOS.HTML CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.discosFlexContainer::before {
+    content: "";
+    background-image: url('../img/fondo_contacto.jpg');
+    background-size: cover;
+    position: fixed;
+    background-position: center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.discosFlexContainer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+.discoGridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    margin: 20px;
+}
+
+.dvdGridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin: 20px;
+}
+
+.discosGridElemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discosGridElemento:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+.discosImagen {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.discosLeyenda {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* BIOGRAFÍA.HTML CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.biografiaFlexContainer::before {
+    content: "";
+    background-image: url('../img/fondo_contacto.jpg');
+    background-size: cover;
+    position: fixed;
+    background-position: center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.biografiaFlexContainer {
+    display: flex;
+    flex-flow: wrap;
+    width: 100vw;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+.biografiaBanner {
+    min-width: 100%;
+    max-height: 250px;
+}
+
+.biografiaTexto {
+    min-width: 100%;
+}
+
+.biografiaTexto p {
+    text-align: justify;
+    line-height: 35px;
+    padding: 5px 20px;
+}
+
+.biografiaImagen {
+    width: 30%;
+    min-width: 500px;
+    flex-grow: 1;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* CONTACTO.HTML CSS */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.contactoFlexContainer::before {
+    content: "";
+    background-image: url('../img/fondo_contacto.jpg');
+    background-size: cover;
+    position: fixed;
+    background-position: center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.contactoFlexContainer {
+    /*     border: 1px solid red; */
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContacto {
+    /*     border: 1px solid red; */
+    margin: 10px;
+    width: 800px;
+    position: relative;
+}
+
+.formContacto::before {
+    content: "";
+    background-image: url('../img/fondo_contacto2.jpg');
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.formDiv {
+    position: relative;
+    /*     border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.formDiv label {
+    position: relative;
+    /*     border: 1px solid red; */
+    height: 25px;
+    width: 180px;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.formDiv label::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+.formDiv input {
+    /*     border: 1px solid red; */
+    height: 35px;
+    width: 350px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.formDiv textarea {
+    /*     border: 1px solid red; */
+    max-width: 600px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.formBotton {
+    position: relative;
+    /*     border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.formBotton input {
+    border: 2px solid rgb(255, 255, 255);
+    height: 35px;
+    width: 120px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* WEB RESPONSIVE */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* CON ESTO HAGO "RESPONSIVE" EL MENÚ */
+/* TODO LO QUE ES PARA CONFIG DE WEB RESPONSIVE, SIEMPRE VA AL FINAL. ESTO
+ES NECESARIO DEBIDO A QUE LA "PROGRAMACIÓN DE CASCADA" HACE QUE SI NO ESTÁ AL FINAL DEL CÓDIGO, VA A PRIORIZAR LO ÚLTIMO QUE ENCUENTRE (Y SI NO ES LO QUE YO QUIERO, ME VA A MOSTRAR ALGO QUE YO NO QUIERO)*/
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+
+    /* HEADER */
+    .logo {
+        height: 60px;
+        width: 60px;
+        margin: 0px 20px;
+    }
+
+    .menuItems li a {
+        font-size: 15px;
+    }
+
+    /* DISCOS.HTML */
+    .discoGridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        margin: 20px;
+    }
+
+    .dvdGridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        margin: 20px;
+    }
+
+    .discosImagen {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border: 2px solid black;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    /* HEADER */
+    .menu {
+        height: 65px;
+        z-index: 9;
+    }
+
+    .btnMenu {
+        display: inline-flex;
+        margin: 0px 20px;
+    }
+
+    .menuItems {
+        position: fixed;
+        margin-left: 10vw;
+        width: 80vw;
+        height: calc(100% - 65px);
+        background: #414141;
+        top: -350vw;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+    }
+
+    .menuItems li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menuItems li:hover {
+        background: none;
+    }
+
+    .menuItems li a {
+        font-size: 20px;
+        color: rgb(255, 241, 240);
+        font-weight: bold;
+    }
+
+    .menuItems li a:hover {
+        color: rgb(14, 15, 50);
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+        margin: 0px 20px;
+    }
+
+    /* CONFIG DEL BODY DE TODOS LOS HTML */
+    .indexFlexContainer {
+        margin-top: 65px;
+    }
+
+    .ultimoDiscoFlexContainer {
+        margin-top: 65px;
+    }
+
+    .proximosShowsFlexContainer {
+        margin-top: 65px;
+    }
+
+    .discosFlexContainer {
+        margin-top: 65px;
+    }
+
+    .biografiaFlexContainer {
+        margin-top: 65px;
+    }
+
+    .contactoFlexContainer {
+        margin-top: 65px;
+    }
+
+    /* FOOTER */
+    .leyenda {
+        font-size: 12px;
+    }
+
+    .redSocial {
+        height: 20px;
+        width: 20px;
+        margin: 0 20px 0 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+
+    /* DISCOS.HTML */
+    .discoGridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        margin: 20px;
+    }
+
+    .dvdGridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        margin: 20px;
+    }
+
+    .discosImagen {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border: 2px solid black;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* FOOTER */
+    .redSocial {
+        height: 20px;
+        width: 20px;
+        margin: 0 10px 0 0;
+    }
+
+    /* ÚLTIMO_DISCO.HTML */
+    .ultimoDiscoTexto {
+        min-width: 300px;
+    }
+
+    /* PRÓXIMOS_SHOWS.HTML */
+    .showsDiv div {
+        width: auto;
+        min-width: 300px;
+    }
+
+    .showsDiv div p {
+        text-align: center;
+    }
+
+    .biografiaProvincia {
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    /* DISCOS.HTML */
+    .discoGridContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+        margin: 20px;
+    }
+
+    .dvdGridContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+        margin: 20px;
+    }
+
+    .discosImagen {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border: 2px solid black;
+    }
+
+    /* BIOGRAFÍA.HTML */
+    .biografiaImagen {
+        min-width: 300px;
+    }
+
+    /* CONTACTO.HTML */
+
+    .formContacto {
+        margin: 20px 10px;
+        max-width: 338px;
+    }
+
+    .formDiv {
+        margin: 20px 10px;
+    }
+
+    .formBotton {
+        margin: 20px 10px;
+    }
+}
