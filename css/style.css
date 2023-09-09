@@ -2,14 +2,14 @@
 /**************************   CSS RESET   **************************/
 /*******************************************************************/
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 .row {
-    margin: 0px !important;
+  margin: 0px !important;
 }
 
 /*******************************************************************/
@@ -17,119 +17,125 @@
 /*******************************************************************/
 /* BODY */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: bisque;
 }
-
 body::before {
-    content: "";
-    background-image: url("../img/fondo_contacto.jpg");
-    background-size: cover;
-    position: fixed;
-    background-position: center;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.1;
-    z-index: -1;
+  content: "";
+  background-image: url("../img/fondo_contacto.jpg");
+  background-size: cover;
+  position: fixed;
+  background-position: center;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 /* HEADER */
 .logo {
-    width: 50px;
+  width: 50px;
 }
 
 /* MAIN */
 h1 {
-    background: linear-gradient(90deg, bisque, rgb(14, 15, 50), rgb(14, 15, 50), bisque);
-    color: aliceblue;
-    text-align: center;
-    padding: 20px;
-    margin: 20px 0px;
-    z-index: 1;
+  background: linear-gradient(90deg, bisque, rgb(14, 15, 50), rgb(14, 15, 50), bisque);
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0px;
+  z-index: 1;
 }
 
 h3 {
-    background: linear-gradient(90deg, bisque, rgb(145, 148, 252), rgb(145, 148, 252), bisque);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px;
-    margin: 10px 0px;
-    z-index: 1;
-}
-
-p {
-    text-align: justify;
-    line-height: 30px;
+  background: linear-gradient(90deg, bisque, rgb(145, 148, 252), rgb(145, 148, 252), bisque);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0px;
+  z-index: 1;
 }
 
 .boldText {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .italicText {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* FOOTER */
 .redSocial {
-    width: 30px;
+  width: 30px;
 }
 
 /*******************************************************************/
 /*************************   INDEX.HTML   **************************/
 /*******************************************************************/
 .video {
-    top: 73px;
-    position: fixed;
-    min-width: 100%;
-    min-height: 88%;
+  top: 73px;
+  position: fixed;
+  min-width: 100%;
+  min-height: 88%;
+}
+
+/*******************************************************************/
+/*********************   PROXIMOS-SHOWS.HTML   *********************/
+/*******************************************************************/
+.ultimoDiscoParrafo {
+  text-align: justify;
+  line-height: 30px;
 }
 
 /*******************************************************************/
 /*********************   PROXIMOS-SHOWS.HTML   *********************/
 /*******************************************************************/
 .bgDegrade {
-    border-top: 2px solid rgb(14, 15, 50);
-    background: linear-gradient(180deg, rgba(145, 148, 252, 0.566) 80%, bisque);
-    z-index: 1;
+  border-top: 2px solid rgb(14, 15, 50);
+  background: linear-gradient(180deg, rgba(145, 148, 252, 0.566) 80%, bisque);
+  z-index: 1;
 }
 
 .showsLugar {
-    font-size: medium;
-    font-style: italic;
+  font-size: medium;
+  font-style: italic;
 }
 
 @media (max-width: 600px) {
-    .showsLugar {
-        font-size: small;
-    }
+  .showsLugar {
+    font-size: small;
+  }
 }
-
 /*******************************************************************/
 /*************************   DISCOS.HTML   *************************/
 /*******************************************************************/
 .discoHover:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-    transition: 0.6s;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.6s;
 }
 
 .discoNegrita {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .discoItalic {
-    font-style: italic;
+  font-style: italic;
 }
 
 /*******************************************************************/
 /***********************   BIOGRAFIA.HTML   ************************/
 /*******************************************************************/
 .banner {
-    min-width: 100%;
-    min-height: 50px;
+  min-width: 100%;
+  min-height: 50px;
+}
+
+.biografiaParrafo {
+  text-align: justify;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

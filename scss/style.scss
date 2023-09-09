@@ -67,7 +67,7 @@ h3 {
     z-index: 1;
 }
 
-p {
+@mixin justifyText {
     text-align: justify;
     line-height: 30px;
 }
@@ -95,6 +95,14 @@ p {
     position: fixed;
     min-width: 100%;
     min-height: 88%;
+}
+
+/*******************************************************************/
+/*********************   PROXIMOS-SHOWS.HTML   *********************/
+/*******************************************************************/
+
+.ultimoDiscoParrafo {
+    @include justifyText;
 }
 
 /*******************************************************************/
@@ -143,4 +151,8 @@ p {
 .banner {
     min-width: 100%;
     min-height: 50px;
+}
+
+.biografiaParrafo {
+    @include justifyText;
 }
