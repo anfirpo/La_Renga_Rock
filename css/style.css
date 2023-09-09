@@ -59,14 +59,6 @@ h3 {
   z-index: 1;
 }
 
-.boldText {
-  font-weight: bold;
-}
-
-.italicText {
-  font-style: italic;
-}
-
 /* FOOTER */
 .redSocial {
   width: 30px;
@@ -83,11 +75,19 @@ h3 {
 }
 
 /*******************************************************************/
-/*********************   PROXIMOS-SHOWS.HTML   *********************/
+/**********************   ULTIMO_DISCO.HTML   **********************/
 /*******************************************************************/
 .ultimoDiscoParrafo {
   text-align: justify;
   line-height: 30px;
+}
+
+.ultimoDiscoBold {
+  font-weight: bold;
+}
+
+.ultimoDiscoItalic {
+  font-style: italic;
 }
 
 /*******************************************************************/
@@ -99,13 +99,16 @@ h3 {
   z-index: 1;
 }
 
-.showsLugar {
-  font-size: medium;
+.proximosShowsBold {
+  font-weight: bold;
+}
+
+.proximosShowsItalic {
   font-style: italic;
 }
 
 @media (max-width: 600px) {
-  .showsLugar {
+  .proximosShowsItalic {
     font-size: small;
   }
 }
@@ -119,11 +122,15 @@ h3 {
   transition: 0.6s;
 }
 
-.discoNegrita {
+.discosMargin {
+  margin-bottom: 5px;
+}
+
+.discosBold {
   font-weight: bold;
 }
 
-.discoItalic {
+.discosItalic {
   font-style: italic;
 }
 

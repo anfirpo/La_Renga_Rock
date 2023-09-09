@@ -72,12 +72,16 @@ h3 {
     line-height: 30px;
 }
 
-.boldText {
+@mixin boldText {
     font-weight: bold;
 }
 
-.italicText {
+@mixin italicText {
     font-style: italic;
+}
+
+@mixin marginBottom ($mb) {
+    margin-bottom: $mb;
 }
 
 /* FOOTER */
@@ -98,11 +102,19 @@ h3 {
 }
 
 /*******************************************************************/
-/*********************   PROXIMOS-SHOWS.HTML   *********************/
+/**********************   ULTIMO_DISCO.HTML   **********************/
 /*******************************************************************/
 
 .ultimoDiscoParrafo {
     @include justifyText;
+}
+
+.ultimoDiscoBold {
+    @include boldText;
+}
+
+.ultimoDiscoItalic {
+    @include italicText;
 }
 
 /*******************************************************************/
@@ -115,13 +127,16 @@ h3 {
     z-index: 1;
 }
 
-.showsLugar {
-    font-size: medium;
-    font-style: italic;
+.proximosShowsBold {
+    @include boldText;
+}
+
+.proximosShowsItalic {
+    @include italicText;
 }
 
 @media (max-width: 600px) {
-    .showsLugar {
+    .proximosShowsItalic {
         font-size: small;
     }
 }
@@ -136,12 +151,16 @@ h3 {
     transition: .6s;
 }
 
-.discoNegrita {
-    font-weight: bold;
+.discosMargin {
+    @include marginBottom(5px);
 }
 
-.discoItalic {
-    font-style: italic;
+.discosBold {
+    @include boldText;
+}
+
+.discosItalic {
+    @include italicText;
 }
 
 /*******************************************************************/
