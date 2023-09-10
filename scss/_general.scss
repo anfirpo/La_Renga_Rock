@@ -1,0 +1,76 @@
+/*******************************************************************/
+/***************************   GENERAL   ***************************/
+/*******************************************************************/
+
+/* BODY */
+
+body {
+    &::before {
+        content: "";
+        background-image: url('../img/fondo_contacto.jpg');
+        background-size: cover;
+        position: fixed;
+        background-position: center;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.1;
+        z-index: -1;
+    }
+
+    font-family: Verdana,
+    Geneva,
+    Tahoma,
+    sans-serif;
+    background-color: bisque;
+}
+
+/* HEADER */
+
+.logo {
+    width: 50px;
+}
+
+/* MAIN */
+
+h1 {
+    background: linear-gradient(90deg, bisque, rgb(14, 15, 50), rgb(14, 15, 50), bisque);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0px;
+    z-index: 1;
+}
+
+h3 {
+    background: linear-gradient(90deg, bisque, rgb(145, 148, 252), rgb(145, 148, 252), bisque);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    z-index: 1;
+}
+
+@mixin justifyText {
+    text-align: justify;
+    line-height: 30px;
+}
+
+@mixin boldText {
+    font-weight: bold;
+}
+
+@mixin italicText {
+    font-style: italic;
+}
+
+@mixin marginBottom ($mb) {
+    margin-bottom: $mb;
+}
+
+/* FOOTER */
+
+.redSocial {
+    width: 30px;
+}
