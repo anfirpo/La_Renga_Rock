@@ -21,6 +21,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: bisque;
 }
+
 body::before {
   content: "";
   background-image: url("../img/fondo_contacto.jpg");
@@ -112,6 +113,7 @@ h3 {
     font-size: small;
   }
 }
+
 /*******************************************************************/
 /*************************   DISCOS.HTML   *************************/
 /*******************************************************************/
