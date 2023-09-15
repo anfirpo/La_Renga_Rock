@@ -1,5 +1,5 @@
 # La_Renga_Rock
-Proyecto destinado a la creación de una fanpage de la Renga
+Proyecto destinado a la creación de una fanpage de La Renga
 
 Github-Pages --> https://anfirpo.github.io/La_Renga_Rock/
 
