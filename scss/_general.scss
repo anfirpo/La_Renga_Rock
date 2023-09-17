@@ -35,18 +35,18 @@ body {
 /* MAIN */
 
 h1 {
-    background: linear-gradient(90deg, bisque, rgb(14, 15, 50), rgb(14, 15, 50), bisque);
-    color: aliceblue;
-    text-align: center;
+    background: $title-bg;
+    color: $title-color;
+    text-align: $title-align;
     padding: 20px;
     margin: 20px 0px;
     z-index: 1;
 }
 
 h3 {
-    background: linear-gradient(90deg, bisque, rgb(145, 148, 252), rgb(145, 148, 252), bisque);
-    color: rgb(0, 0, 0);
-    text-align: center;
+    background: $subtitle-bg;
+    color: $subtitle-color;
+    text-align: $title-align;
     padding: 10px;
     margin: 10px 0px;
     z-index: 1;
