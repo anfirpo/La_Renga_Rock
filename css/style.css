@@ -16,6 +16,8 @@
 /*******************************************************************/
 /************************   VARIABLES.HTML   ***********************/
 /*******************************************************************/
+/* GENERAL */
+/* CONTACTO */
 /*******************************************************************/
 /***************************   GENERAL   ***************************/
 /*******************************************************************/
@@ -49,6 +51,8 @@ h1 {
   background: linear-gradient(90deg, bisque, rgb(14, 15, 50), rgb(14, 15, 50), bisque);
   color: aliceblue;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
   padding: 20px;
   margin: 20px 0px;
   z-index: 1;
@@ -58,9 +62,16 @@ h3 {
   background: linear-gradient(90deg, bisque, rgb(145, 148, 252), rgb(145, 148, 252), bisque);
   color: rgb(0, 0, 0);
   text-align: center;
+  text-transform: initial;
+  font-weight: bold;
   padding: 10px;
   margin: 10px 0px;
   z-index: 1;
+}
+
+.buttonFont {
+  font-family: cursive;
+  font-size: large;
 }
 
 /* FOOTER */
@@ -149,6 +160,13 @@ h3 {
 .biografiaParrafo {
   text-align: justify;
   line-height: 30px;
+}
+
+/*******************************************************************/
+/************************   CONTACTO.HTML   ************************/
+/*******************************************************************/
+.formBold {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

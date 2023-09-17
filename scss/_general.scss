@@ -38,6 +38,8 @@ h1 {
     background: $title-bg;
     color: $title-color;
     text-align: $title-align;
+    text-transform: $title-uppercase;
+    font-weight: $title-bold;
     padding: 20px;
     margin: 20px 0px;
     z-index: 1;
@@ -47,6 +49,8 @@ h3 {
     background: $subtitle-bg;
     color: $subtitle-color;
     text-align: $title-align;
+    text-transform: initial;
+    font-weight: $title-bold;
     padding: 10px;
     margin: 10px 0px;
     z-index: 1;
@@ -67,6 +71,11 @@ h3 {
 
 @mixin marginBottom ($mb) {
     margin-bottom: $mb;
+}
+
+.buttonFont {
+    font-family: $button-font;
+    font-size: $button-font-size;
 }
 
 /* FOOTER */
