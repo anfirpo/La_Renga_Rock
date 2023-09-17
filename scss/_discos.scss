@@ -19,3 +19,18 @@
 .discosItalic {
     @include italicText;
 }
+
+/* Setlist Modal */
+
+.discosModalHeader {
+    background-color: rgb(137, 152, 177);
+
+    h2 {
+        font-weight: bold;
+    }
+}
+
+.discosModalBody,
+.discosModalFooter {
+    background-color: rgb(240, 242, 245);
+}

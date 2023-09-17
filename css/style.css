@@ -163,6 +163,20 @@ h3 {
   font-style: italic;
 }
 
+/* Setlist Modal */
+.discosModalHeader {
+  background-color: rgb(137, 152, 177);
+}
+
+.discosModalHeader h2 {
+  font-weight: bold;
+}
+
+.discosModalBody,
+.discosModalFooter {
+  background-color: rgb(240, 242, 245);
+}
+
 /*******************************************************************/
 /***********************   BIOGRAFIA.HTML   ************************/
 /*******************************************************************/
