@@ -128,6 +128,20 @@ h3 {
   }
 }
 
+/* Botones de compra de entradas */
+.showsModalHeader {
+  background-color: rgb(137, 152, 177);
+}
+
+.showsModalHeader h2 {
+  font-weight: bold;
+}
+
+.showsModalBody,
+.showsModalFooter {
+  background-color: rgb(240, 242, 245);
+}
+
 /*******************************************************************/
 /*************************   DISCOS.HTML   *************************/
 /*******************************************************************/
