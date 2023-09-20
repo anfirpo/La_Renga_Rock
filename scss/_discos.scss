@@ -10,6 +10,7 @@
 
 .discosMargin {
     @include marginBottom(5px);
+    cursor: pointer;
 }
 
 .discosBold {
@@ -27,10 +28,28 @@
 
     h2 {
         font-weight: bold;
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
 
-.discosModalBody,
+.discosModalBody {
+    background-color: rgb(240, 240, 245);
+
+    ol {
+        li {
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+    }
+}
+
 .discosModalFooter {
-    background-color: rgb(240, 242, 245);
+    background-color: rgb(202, 209, 222);
+
+    button {
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
