@@ -177,6 +177,7 @@ h3 {
 
 .discosModalBody {
   background-color: rgb(240, 240, 245);
+  max-height: 500px;
 }
 
 .discosModalBody ol li {
