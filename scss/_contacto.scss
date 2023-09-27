@@ -70,9 +70,10 @@
         position: relative;
 
         /*     border: 1px solid red; */
+        border-radius: 3px;
         height: 34px;
         width: 180px;
-        padding-left: 3px;
+        padding-left: 7px;
         padding-top: 5px;
         flex-grow: 1;
         font-size: 16px;
@@ -86,6 +87,7 @@
             background-size: cover;
             position: absolute;
             background-position: center;
+            border-radius: 3px;
             top: 0px;
             right: 0px;
             bottom: 0px;
@@ -96,15 +98,21 @@
 
     input {
         /*     border: 1px solid red; */
+        border: none;
+        border-radius: 3px;
         height: 35px;
         width: 350px;
+        padding-left: 7px;
         flex-grow: 1;
         font-size: 16px;
     }
 
     textarea {
         /*     border: 1px solid red; */
+        border-radius: 5px;
         max-width: 600px;
+        min-height: 150px;
+        padding: 7px;
         flex-grow: 1;
         font-size: 16px;
     }
@@ -138,12 +146,4 @@
     background-color: rgb(14, 15, 50);
     color: aliceblue;
     border-radius: 5px;
-}
-
-/* Media Queries - Contacto */
-
-@media (max-width: 400px) {
-    .formContacto {
-        min-width: 300px;
-    }
 }

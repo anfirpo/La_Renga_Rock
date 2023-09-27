@@ -85,7 +85,7 @@ h3 {
 .video {
   top: 73px;
   position: fixed;
-  min-width: 100%;
+  width: 100%;
   min-height: 88%;
 }
 
@@ -268,9 +268,10 @@ h3 {
 .formDiv label {
   position: relative;
   /*     border: 1px solid red; */
+  border-radius: 3px;
   height: 34px;
   width: 180px;
-  padding-left: 3px;
+  padding-left: 7px;
   padding-top: 5px;
   flex-grow: 1;
   font-size: 16px;
@@ -284,6 +285,7 @@ h3 {
   background-size: cover;
   position: absolute;
   background-position: center;
+  border-radius: 3px;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -292,14 +294,20 @@ h3 {
 }
 .formDiv input {
   /*     border: 1px solid red; */
+  border: none;
+  border-radius: 3px;
   height: 35px;
   width: 350px;
+  padding-left: 7px;
   flex-grow: 1;
   font-size: 16px;
 }
 .formDiv textarea {
   /*     border: 1px solid red; */
+  border-radius: 5px;
   max-width: 600px;
+  min-height: 150px;
+  padding: 7px;
   flex-grow: 1;
   font-size: 16px;
 }
@@ -332,7 +340,9 @@ h3 {
   border-radius: 5px;
 }
 
-/* Media Queries - Contacto */
+/*******************************************************************/
+/************************   CONTACTO.HTML   ************************/
+/*******************************************************************/
 @media (max-width: 400px) {
   .formContacto {
     min-width: 300px;
