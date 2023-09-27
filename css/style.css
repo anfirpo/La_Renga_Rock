@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Importo todos los _scss asociados al proyecto */
 /*******************************************************************/
 /**************************   CSS RESET   **************************/
@@ -27,6 +28,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: bisque;
 }
+
 body::before {
   content: "";
   background-image: url("../img/fondo-contacto.jpg");
@@ -127,10 +129,12 @@ h3 {
     font-size: small;
   }
 }
+
 /* Botones de compra de entradas */
 .showsModalHeader {
   background-color: rgb(137, 152, 177);
 }
+
 .showsModalHeader h2 {
   font-weight: bold;
 }
@@ -166,6 +170,7 @@ h3 {
 .discosModalHeader {
   background-color: rgb(137, 152, 177);
 }
+
 .discosModalHeader h2 {
   font-weight: bold;
   font-size: large;
@@ -176,6 +181,7 @@ h3 {
   background-color: rgb(240, 240, 245);
   max-height: 500px;
 }
+
 .discosModalBody ol li {
   font-size: large;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -185,6 +191,7 @@ h3 {
 .discosModalFooter {
   background-color: rgb(202, 209, 222);
 }
+
 .discosModalFooter button {
   font-size: large;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -222,6 +229,7 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+
 .contactoFlexContainer::before {
   content: "";
   background-size: cover;
@@ -241,6 +249,7 @@ h3 {
   width: 800px;
   position: relative;
 }
+
 .formContacto::before {
   content: "";
   background-image: url("../img/fondo-contacto2.jpg");
@@ -265,6 +274,7 @@ h3 {
   align-items: center;
   margin: 20px;
 }
+
 .formDiv label {
   position: relative;
   /*     border: 1px solid red; */
@@ -279,6 +289,7 @@ h3 {
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 .formDiv label::before {
   content: "";
   background-color: rgb(255, 255, 255);
@@ -292,6 +303,7 @@ h3 {
   left: 0px;
   opacity: 0.2;
 }
+
 .formDiv input {
   /*     border: 1px solid red; */
   border: none;
@@ -302,6 +314,7 @@ h3 {
   flex-grow: 1;
   font-size: 16px;
 }
+
 .formDiv textarea {
   /*     border: 1px solid red; */
   border-radius: 5px;
@@ -320,6 +333,7 @@ h3 {
   justify-content: space-evenly;
   margin: 20px;
 }
+
 .formBotton button {
   border: 2px solid rgb(255, 255, 255);
   height: 35px;
